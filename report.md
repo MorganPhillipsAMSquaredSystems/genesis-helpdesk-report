@@ -1,16 +1,16 @@
 ---
 schema: genesis-helpdesk-report/v1
 schema_version: 1
-report_date: 2026-10-26
-figures_as_of: 2026-10-26T19:20:00+02:00
+report_date: 2026-10-27
+figures_as_of: 2026-10-27T19:10:00+02:00
 timezone: Africa/Johannesburg (SAST, +02:00)
 language: en
 period_start: 2026-10-22
-working_days_to_date: 3
+working_days_to_date: 4
 source: Genesis Helpdesk records (support posts, responses, Board moves) plus Board reads; test items excluded
 refresh: nightly, every weekday evening; this file is overwritten in place and archived by date
 url: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/report.md
-archive_url: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/reports/2026-10-26.md
+archive_url: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/reports/2026-10-27.md
 html_reports:
   en: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/en/
   af: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/af/
@@ -21,53 +21,53 @@ images:
   af_to_date: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/img/af-todate.png
 board_status_values: ["1 -- Backlog", "2 -- Open", "3 -- In Progress", "4 -- Resolved", "5 -- Closed", "7 -- Maybe Later", "No Status"]
 figures:
-  intake_per_working_day: [6, 3, 6]
-  resolved_per_working_day: [0, 3, 7]
-  intake_today: 6
-  resolved_today: 7
-  intake_to_date: 15
-  resolved_to_date: 10
-  average_intake_per_day: 5.0
-  capacity_lower_limit_per_day: 3.3
+  intake_per_working_day: [6, 3, 6, 3]
+  resolved_per_working_day: [0, 3, 7, 2]
+  intake_today: 3
+  resolved_today: 2
+  intake_to_date: 18
+  resolved_to_date: 12
+  average_intake_per_day: 4.5
+  capacity_lower_limit_per_day: 3.0
   capacity_confidence: low
 automated_qa_status: on_hold
-cards_listed: 14
-release_notes_candidates: 6
+cards_listed: 9
+release_notes_candidates: 2
 ---
 
-# Genesis Helpdesk stats: 26 Oct 2026
+# Genesis Helpdesk stats: 27 Oct 2026
 
-Figures as of 26 Oct 2026, 19:20 SAST. Refreshed every weekday evening. Full dark reports: English https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/en/ and Afrikaans https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/af/.
+Figures as of 27 Oct 2026, 19:10 SAST. Refreshed every weekday evening. Full dark reports: English https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/en/ and Afrikaans https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/af/.
 
 ## Summary
 
-- Today: Today 6 new tickets were triaged and each one received a first response and an expert answer, while 7 cards moved to Resolved.
-- To date: Since the Helpdesk started on 22 Oct, 17 posts have been handled, 15 new tickets have been placed on the Board and 10 cards have moved to Resolved.
-- Capacity: To date an average of 5.0 new tickets come in per working day, against 3.3 that are resolved, so the open work is growing.
-- Automated QA: The QA process worked end to end and is now deliberately on hold, because intake of 5.0 a day is already above the lower limit of 3.3 (see Capacity above). Without the QA bugs, intake to date would have been 13 (4.3 per working day).
-- What to watch: Whether the resolution rate keeps up with intake of about 5 tickets a day, and the self-relations theme in the Entity Table.
+- Today: Today 3 new tickets were triaged and a compliment on release 1.3.10 was answered, while 2 cards moved to Resolved and 1 to Closed.
+- To date: Since the Helpdesk started on 22 Oct, 21 posts have been handled, 18 new tickets have been placed on the Board and 12 cards have moved to Resolved.
+- Capacity: To date an average of 4.5 new tickets come in per working day, against 3.0 that are resolved, so the open work is growing.
+- Automated QA: QA stays deliberately on hold so it doesn't overwhelm dev capacity, because intake of 4.5 a day is still above the lower limit of 3.0 (see Capacity above). Without the QA findings, intake to date would have been 16 (4.0 per working day).
+- What to watch: Whether resolutions pick up again after today's 2, and the derived-entity and self-relations theme in the Entity Table, which now has a second reporter.
 
 ## Today
 
-Period: Monday 26 Oct 2026.
+Period: Tuesday 27 Oct 2026.
 
 | Measure | Value | Detail |
 |:---|---:|:---|
-| New tickets triaged | 6 | 4 bugs · 2 enhancements |
-| First responses sent | 6 / 6 | median 2.5 min after the post was seen (average 2.8) |
-| Expert answers sent | 6 / 6 | median 15.5 min after the post was seen (average 21.5) |
-| Progress updates to reporters | 10 | 6 Resolved · 4 In Progress |
-| Cards moved to Resolved | 7 | plus 1 moved to Closed |
-| Satisfaction polls sent | 2 | no replies yet |
+| New tickets triaged | 3 | 1 bug · 2 enhancements |
+| First responses sent | 3 / 3 | median 2 min after the post was seen (average 6.3) |
+| Expert answers sent | 2 / 2 | median 20 min after the post was seen (average 20) |
+| Progress updates to reporters | 6 | 2 Resolved · 2 In Progress · 1 Open · 1 Backlog |
+| Cards moved to Resolved | 2 | plus 1 moved to Closed |
+| Satisfaction reply received | 1 | score 5 out of 5 · no new polls sent |
 
 ### Response times (today)
 
-Today every new ticket received a first response within a median of 2.5 minutes, and the expert answer followed within a median of 15.5 minutes.
+Today every post that needed a Helpdesk reply got a first response within a median of 2 minutes, and both expert answers followed within a median of 20 minutes.
 
 | Measure | Median (min) | Average (min) | Number timed |
 |:---|---:|---:|---:|
-| First response | 2.5 | 2.8 | 6 |
-| Expert answer | 15.5 | 21.5 | 6 |
+| First response | 2 | 6.3 | 3 |
+| Expert answer | 20 | 20 | 2 |
 
 Times are measured from the moment the Helpdesk first saw a post.
 
@@ -75,61 +75,60 @@ Times are measured from the moment the Helpdesk first saw a post.
 
 | Area | New tickets |
 |:---|---:|
-| Entity Table | 2 |
-| Chart View | 1 |
-| Forms | 1 |
-| List View | 1 |
-| Navigation | 1 |
+| Entity Table | 1 |
+| Feed | 1 |
+| Fields | 1 |
 
 ### Progress updates by status (today)
 
 | Status | Updates |
 |:---|---:|
-| 2 -- Open | 0 |
-| 3 -- In Progress | 4 |
-| 4 -- Resolved | 6 |
+| 2 -- Open | 1 |
+| 3 -- In Progress | 2 |
+| 4 -- Resolved | 2 |
 | 7 -- Maybe Later | 0 |
+| 1 -- Backlog | 1 |
 
 ### Expert review outcome (today)
 
 | Outcome | Tickets | Detail |
 |:---|---:|:---|
-| Bug | 4 | 3 with a workaround |
-| Enhancement | 2 | both with a workaround |
+| Bug | 1 | no user workaround yet |
+| Enhancement | 2 | 1 with a workaround |
 | User error | 0 |  |
 
 ### By reporter (today)
 
 | Reporter | New posts | Progress updates received |
 |:---|---:|---:|
-| Gabriel Yssel | 3 | 2 |
-| Morgan Phillips | 2 | 0 |
-| Shelley | 1 | 3 |
-| Reinhardt Coetzee | 0 | 3 |
-| Falynn Missing | 0 | 1 |
-| Angelique Steyn | 0 | 1 |
+| Gabriel Yssel | 2 | 2 |
+| Leeroy Stander | 1 | 0 |
+| June | 1 | 0 |
+| Morgan Phillips | 0 | 2 |
+| Shelley | 0 | 1 |
+| Reinhardt Coetzee | 0 | 1 |
 
 ## To date
 
-Period: 22 to 26 Oct 2026 · 3 working days.
+Period: 22 to 27 Oct 2026 · 4 working days.
 
 | Measure | Value | Detail |
 |:---|---:|:---|
-| Support posts handled | 17 | 15 needed a card · 2 needed no action |
-| New tickets (cards created) | 15 | 10 bugs · 3 enhancements · 2 not categorised |
-| First responses sent | 10 | median 4 min after the post was seen (average 4.4, 9 timed) |
-| Expert answers sent | 9 | median 21 min after the post was seen (average 23.8) |
-| Progress updates to reporters | 30 | Open 2 · In Progress 8 · Resolved 9 · Maybe Later 11 |
-| Cards moved to Resolved | 10 | Resolved column 149 → 159 |
+| Support posts handled | 21 | 18 needed a card · 3 needed no action |
+| New tickets (cards created) | 18 | 10 bugs · 6 enhancements · 2 not categorised |
+| First responses sent | 13 | median 3.5 min after the post was seen (average 4.9, 12 timed) |
+| Expert answers sent | 11 | median 21 min after the post was seen (average 23.1) |
+| Progress updates to reporters | 36 | Open 3 · In Progress 10 · Resolved 11 · Maybe Later 11 · Backlog 1 |
+| Cards moved to Resolved | 12 | Resolved column 149 → 161 |
 
 ### Response times (to date)
 
-To date, the median first response time is 4 minutes and the median time to an expert answer is 21 minutes.
+To date, the median first response time is 3.5 minutes and the median time to an expert answer is 21 minutes.
 
 | Measure | Median (min) | Average (min) | Number timed |
 |:---|---:|---:|---:|
-| First response | 4 | 4.4 | 9 (of 10) |
-| Expert answer | 21 | 23.8 | 9 |
+| First response | 3.5 | 4.9 | 12 (of 13) |
+| Expert answer | 21 | 23.1 | 11 |
 
 Times are measured from the moment the Helpdesk first saw a post.
 
@@ -137,8 +136,9 @@ Times are measured from the moment the Helpdesk first saw a post.
 
 | Area | New tickets |
 |:---|---:|
-| Entity Table | 3 |
+| Entity Table | 4 |
 | Formulas / Formula Editor | 2 |
+| Feed | 2 |
 | Chart View | 1 |
 | Canvas View | 1 |
 | Board View | 1 |
@@ -147,52 +147,54 @@ Times are measured from the moment the Helpdesk first saw a post.
 | Rules | 1 |
 | Documents | 1 |
 | Dashboard | 1 |
-| Feed | 1 |
 | Navigation | 1 |
+| Fields | 1 |
 
 ### Progress updates by status (to date)
 
 | Status | Updates |
 |:---|---:|
-| 2 -- Open | 2 |
-| 3 -- In Progress | 8 |
-| 4 -- Resolved | 9 |
+| 2 -- Open | 3 |
+| 3 -- In Progress | 10 |
+| 4 -- Resolved | 11 |
 | 7 -- Maybe Later | 11 |
+| 1 -- Backlog | 1 |
 
 ### Expert review outcome (to date)
 
 | Outcome | Tickets | Detail |
 |:---|---:|:---|
-| Bug | 6 | 4 with a workaround |
-| Enhancement | 2 | both with a workaround |
+| Bug | 6 | 3 with a workaround |
+| Enhancement | 5 | 4 with a workaround |
 | User error | 1 | answered with the correct steps |
 
 ### By reporter (to date)
 
 | Reporter | New posts | Progress updates received |
 |:---|---:|---:|
-| Gabriel Yssel | 6 | 4 |
-| Shelley | 4 | 5 |
-| Morgan Phillips | 3 | 1 |
-| Reinhardt Coetzee | 2 | 4 |
+| Gabriel Yssel | 8 | 6 |
+| Shelley | 4 | 6 |
+| Morgan Phillips | 3 | 3 |
+| Reinhardt Coetzee | 2 | 5 |
 | Falynn Missing | 1 | 9 |
 | Angelique Steyn | 1 | 6 |
-| Leeroy Stander | 0 | 1 |
+| Leeroy Stander | 1 | 1 |
+| June | 1 | 0 |
 
 ### Board, all columns
 
 | Column | At start (22 Oct, cards) | Start of today (cards) | Now (cards) |
 |:---|---:|---:|---:|
-| Backlog | 18 | 12 | 13 |
-| Open | 2 | 4 | 3 |
-| In Progress | 6 | 10 | 10 |
-| Resolved | 149 | 152 | 159 |
-| Closed | 226 | 226 | 227 |
+| Backlog | 18 | 13 | 12 |
+| Open | 2 | 3 | 3 |
+| In Progress | 6 | 10 | 12 |
+| Resolved | 149 | 159 | 161 |
+| Closed | 226 | 227 | 228 |
 | Maybe Later | 24 | 24 | 24 |
 | No Status | 4 | 4 | 4 |
-| Total | 429 | 432 | 440 |
+| Total | 429 | 440 | 444 |
 
-The whole Board, not only Helpdesk cards; Now is the last full count (15:12 SAST) plus the moves and new cards recorded up to 18:30 SAST.
+The whole Board, not only Helpdesk cards; Now is the last full count (17:21 SAST) plus the 2 new cards recorded up to 18:40 SAST.
 
 ## Capacity
 
@@ -200,29 +202,29 @@ Team size: 6 developers.
 
 ### Today
 
-Today more work went out than came in: 6 new tickets against 7 resolved cards, a net flow of −1.
+Today more came in than went out: 3 new tickets against 2 resolved cards, a net flow of +1.
 
 | Measure | Team (6 developers) | Per developer |
 |:---|---:|---:|
-| New tickets | 6 | 1.00 |
-| Resolved | 7 | 1.17 |
-| Net flow (in minus resolved) | −1 · shrinking | not applicable |
-| Open load (Backlog + Open + In Progress) | 25 | 4.2 |
+| New tickets | 3 | 0.50 |
+| Resolved | 2 | 0.33 |
+| Net flow (in minus resolved) | +1 · growing | not applicable |
+| Open load (Backlog + Open + In Progress) | 26 | 4.3 |
 
 Today is 1 working day; open load is a snapshot of the whole Board, excluding test items.
 
 ### To date
 
-To date an average of 5.0 new tickets come in per working day, against 3.3 that are resolved, so the open work is growing.
+To date an average of 4.5 new tickets come in per working day, against 3.0 that are resolved, so the open work is growing.
 
 | Measure | Team (6 developers) | Per developer |
 |:---|---:|---:|
-| New tickets per working day | 5.0 | 0.83 |
-| Resolved per working day | 3.3 | 0.56 |
-| Net flow (in minus resolved) | +5 · growing | not applicable |
-| Open load (Backlog + Open + In Progress) | 25 | 4.2 |
+| New tickets per working day | 4.5 | 0.75 |
+| Resolved per working day | 3.0 | 0.50 |
+| Net flow (in minus resolved) | +6 · growing | not applicable |
+| Open load (Backlog + Open + In Progress) | 26 | 4.3 |
 
-3 working days (Thu 22, Fri 23 and Mon 26 Oct); open load is a snapshot of the whole Board, excluding test items.
+4 working days (Thu 22, Fri 23, Mon 26 and Tue 27 Oct); open load is a snapshot of the whole Board, excluding test items.
 
 ### New tickets against resolved cards per working day
 
@@ -231,15 +233,16 @@ To date an average of 5.0 new tickets come in per working day, against 3.3 that 
 | Thu 22 Oct | 6 | 0 |
 | Fri 23 Oct | 3 | 3 |
 | Mon 26 Oct | 6 | 7 |
+| Tue 27 Oct | 3 | 2 |
 
 Resolved cards on 22 Oct count as 0, because tracking only began that evening.
 
 ### Lower-limit estimate
 
-- Estimate: 3.3 new tickets a day the team can handle (0.56 per developer · confidence: low (10 resolved cards over 3 working days)).
-- Method: The lower limit is the lower of the average resolution rate to date (10 resolved over 3 working days = 3.3) and the average over the last 3 working days (the same 3 days, so also 3.3). Because 22 Oct counts as 0, the estimate leans low rather than high.
-- Warning: Intake is about 1.5 times the lower limit. If both rates hold, the open work will grow by about 1.7 cards per working day (estimate).
-- Analysis: The open pile has only stayed at 25 since the start because today was a big resolve day. At 3.3 a day, the current 25 open cards are about 7.5 working days of work, or about 4 cards per developer (estimate). Two of today's 6 new tickets came from internal QA, and the person who posts them is also one of the 6 developers, so QA intake competes with the time available for fixes.
+- Estimate: 3.0 new tickets a day the team can handle (0.50 per developer · confidence: low (12 resolved cards over 4 working days)).
+- Method: The lower limit is the lower of the average resolution rate to date (12 resolved over 4 working days = 3.0) and the average over the last 3 working days (12 resolved over 23, 26 and 27 Oct = 4.0). Because 22 Oct counts as 0, the estimate leans low rather than high.
+- Warning: Intake is about 1.5 times the lower limit. If both rates hold, the open work will grow by about 1.5 cards per working day (estimate).
+- Analysis: The open pile went from 25 to 26 today, because 3 new tickets came in and 2 cards were resolved. At 3.0 a day, the current 26 open cards are about 8.7 working days of work, or about 4.3 cards per developer (estimate). Today's intake of 3 was below the average of 4.5, and none of it came from QA.
 
 ### Developer lanes on the Board
 
@@ -253,24 +256,24 @@ Resolved cards on 22 Oct count as 0, because tracking only began that evening.
 | Morgan Phillips | 3 | 11 |
 | Not assigned (excluded) | 7 | 3 |
 
-Lanes read at 18:32 SAST with a Created At filter (last 7 days) active; resolved cards per developer within the period are not available.
+Lanes read on 26 Oct at 18:32 SAST with a Created At filter (last 7 days) active; resolved cards per developer within the period are not available.
 
 ## Automated QA
 
 Status: on hold (trial run).
 
-The automated QA trial run on 26 Oct found two minor bugs, both with a workaround, and they are 2 of the 15 new tickets to date.
+The automated QA trial run on 26 Oct raised two minor findings, both with a workaround; they are 2 of the 18 new tickets to date, and one has since been reclassified as a feature request.
 
 Specialist QA checks on Genesis look for bugs, Morgan approves each finding, and it is then posted on the Helpdesk feed in his name. From there it follows the normal Helpdesk flow: a card on the Board, an expert review and an update to the reporter.
 
-| QA ref | Card | Posted (SAST) | Status | Severity | Workaround | Update (SAST) |
+| QA ref | Card | Posted (SAST) | Status | Type and severity | Workaround | Last update (SAST) |
 |:---|:---|---:|:---|:---|:---|:---|
-| SN-31 | Navigation: view page breadcrumb and tab title show the wrong space | 11:49 | Backlog | Bug · Medium (cosmetic) | Yes | 12:04 |
-| LV-01 | List View: right-click on a group header shows no menu | 12:50 | Backlog | Bug · Medium (low impact) | Yes | 13:02 |
+| SN-31 | Navigation: view page breadcrumb and tab title show the wrong space | 26 Oct 11:49 | Backlog | Bug · Medium (cosmetic) | Yes | 27 Oct 12:57 |
+| LV-01 | List View: right-click on a group header shows no menu | 26 Oct 12:50 | Backlog | Enhancement · Medium (low impact) | Yes | 27 Oct 13:57 |
 
-Both are Morgan Phillips's posts and are already included in the ticket counts on this page, not added on top.
+Both are Morgan Phillips's posts from 26 Oct and are already included in the ticket counts on this page, not added on top.
 
-The QA process worked end to end and is now deliberately on hold, because intake of 5.0 a day is already above the lower limit of 3.3 (see Capacity above). Without the QA bugs, intake to date would have been 13 (4.3 per working day).
+QA stays deliberately on hold so it doesn't overwhelm dev capacity, because intake of 4.5 a day is still above the lower limit of 3.0 (see Capacity above). Without the QA findings, intake to date would have been 16 (4.0 per working day).
 
 ## Cards
 
@@ -278,29 +281,24 @@ Cards that were created or updated today. Status is the Board column. A release-
 
 | Card | Type | Area | Status | Workaround | Reporter | New today | Resolved today | Release-notes candidate | QA ref | Note |
 |:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
-| Entity Table: self-relation link shows on the wrong side until refresh | Bug | Entity Table | 1 -- Backlog | yes | Gabriel Yssel | yes | no | no |  |  |
-| Navigation: view page breadcrumb and tab title show the wrong space | Bug | Navigation | 1 -- Backlog | yes | Morgan Phillips | yes | no | no | SN-31 |  |
-| Forms: add a link block to the form designer | Enhancement | Forms | 3 -- In Progress | yes | Shelley | yes | no | no |  |  |
-| List View: right-click on a group header shows no menu | Bug | List View | 1 -- Backlog | yes | Morgan Phillips | yes | no | no | LV-01 |  |
-| Chart View: filter using values from a linked item (e.g. current shift start and end) | Enhancement | Chart View | 3 -- In Progress | partial | Gabriel Yssel | yes | no | no |  |  |
-| Entity Table: self-relations on a derived entity don't show | Bug | Entity Table | 1 -- Backlog | no | Gabriel Yssel | yes | no | no |  |  |
-| Entities: Present item GUID/identifier in UI | Enhancement | Entities | 4 -- Resolved | not recorded | Falynn Missing | no | yes | yes |  |  |
-| Rules: Name/Title not working | Bug | Rules | 4 -- Resolved | not recorded | Reinhardt Coetzee | no | yes | yes |  |  |
-| Rules: relation-linked rule passes test but doesn't fire | Bug | Rules | 4 -- Resolved | not recorded | Shelley | no | yes | yes |  |  |
-| Entity Table: Bulk update errors | Bug | Entity Table | 4 -- Resolved | not recorded | Shelley | no | yes | yes |  | urgent, data loss |
-| Documents: Lexical toolbar obscuring text | Bug | Documents | 4 -- Resolved | not recorded | Angelique Steyn | no | yes | yes |  |  |
-| Feed: Comments disappearing | Bug | Feed | 4 -- Resolved | not recorded | Reinhardt Coetzee | no | yes | yes |  |  |
-| Canvas View: Self relations not displaying correctly | Bug | Canvas View | 3 -- In Progress | not recorded | Gabriel Yssel | no | no | no |  |  |
-| Board View: Sorting not working properly | Bug | Board View | 3 -- In Progress | not recorded | Reinhardt Coetzee | no | no | no |  |  |
+| Entity Table: relating two derived entities shows a count instead of the related item | Enhancement | Entity Table | 1 -- Backlog | no | Leeroy Stander | yes | no | no |  |  |
+| Feed: a deleted system Feed link on an entity can't be reconnected | Bug | Feed | 1 -- Backlog | not recorded | Gabriel Yssel | yes | no | no |  |  |
+| Fields: add a Time data type and date/time helper functions in formulas | Enhancement | Fields | 1 -- Backlog | yes | Gabriel Yssel | yes | no | no |  |  |
+| Entity Table: self-relations on a derived entity don't show | Bug | Entity Table | 3 -- In Progress | not recorded | Gabriel Yssel | no | no | no |  |  |
+| Table View: Fields not showing on detail screen | Bug | Table View | 4 -- Resolved | not recorded | Shelley | no | yes | yes |  |  |
+| Navigation: view page breadcrumb and tab title show the wrong space | Bug | Navigation | 2 -- Open | not recorded | Morgan Phillips | no | no | no | SN-31 |  |
+| Board View: Sorting not working properly | Bug | Board View | 4 -- Resolved | not recorded | Reinhardt Coetzee | no | yes | yes |  |  |
+| List View: right-click on a group header shows no menu | Enhancement | List View | 1 -- Backlog | not recorded | Morgan Phillips | no | no | no | LV-01 |  |
+| Entity Table: self-relation link shows on the wrong side until refresh | Bug | Entity Table | 3 -- In Progress | not recorded | Gabriel Yssel | no | no | no |  |  |
 
 ## Data notes
 
-- Source: the Helpdesk's own records of posts, responses and Board moves, plus Board reads. Period: 22 to 26 Oct 2026 (3 working days), with today as Monday 26 Oct. Test posts and test cards are excluded.
-- Gaps: since 15:12 SAST a Board filter has hidden some columns, so later Board figures are built from the recorded moves rather than a fresh full count. Resolved cards per developer within the period are not available. Satisfaction polls started on 23 Oct and have no scores yet. Resolved cards before the start are by Assigned To as at 22 Oct; another 9 sat with Gabriel Yssel, who now has no developer lane.
+- Source: the Helpdesk's own records of posts, responses and Board moves, plus Board reads. Period: 22 to 27 Oct 2026 (4 working days), with today as Tuesday 27 Oct. Test posts and test cards are excluded.
+- Gaps: Start of today is last night's figure, which was built from recorded moves, so it doesn't line up exactly with today's full counts. The first response time for the Time data type post is approximate, because that post had no support tag and was found in a full feed scan. Resolved cards per developer within the period are not available. Satisfaction: 2 polls were sent on 26 Oct and 1 reply has come in so far (score 5 out of 5). Developer lanes are from the 26 Oct Board read; resolved cards before the start are by Assigned To as at 22 Oct, and another 9 sat with Gabriel Yssel, who has no developer lane.
 - Test items are excluded from every count and table.
 - Workaround is "not recorded" where the report has no workaround field for that card.
-- The Cards table lists the cards whose reporter got a progress update today; 6 of today's 7 moves to 4 -- Resolved are listed, and the rest had no reporter update, so their titles are not in this report.
+- The Cards table lists the cards whose reporter got a progress update today; 2 of today's 2 moves to 4 -- Resolved are listed, and the rest had no reporter update, so their titles are not in this report.
 
 ## What to watch
 
-Whether the resolution rate keeps up with intake of about 5 tickets a day, and the self-relations theme in the Entity Table.
+Whether resolutions pick up again after today's 2, and the derived-entity and self-relations theme in the Entity Table, which now has a second reporter.
