@@ -2,7 +2,7 @@
 schema: genesis-helpdesk-report/v1
 schema_version: 1
 report_date: 2026-11-02
-figures_as_of: 2026-11-02T20:53:00+02:00
+figures_as_of: 2026-11-02T21:03:00+02:00
 timezone: Africa/Johannesburg (SAST, +02:00)
 language: en
 period_start: 2026-10-22
@@ -34,7 +34,7 @@ release_notes_candidates: 3
 
 # Genesis Helpdesk stats: 2 Nov 2026
 
-Figures as of 2 Nov 2026, 20:53 SAST. Refreshed every weekday evening. Full dark report: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/en/.
+Figures as of 2 Nov 2026, 21:03 SAST. Refreshed every weekday evening. Full dark report: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/en/.
 
 ## Summary
 
