@@ -1,16 +1,16 @@
 ---
 schema: genesis-helpdesk-report/v1
 schema_version: 1
-report_date: 2026-10-29
-figures_as_of: 2026-10-29T18:45:00+02:00
+report_date: 2026-11-02
+figures_as_of: 2026-11-02T17:33:00+02:00
 timezone: Africa/Johannesburg (SAST, +02:00)
 language: en
 period_start: 2026-10-22
-working_days_to_date: 6
+working_days_to_date: 8
 source: Genesis Helpdesk records (support posts, responses, Board moves) plus Board reads; test items excluded
 refresh: nightly, every weekday evening; this file is overwritten in place and archived by date
 url: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/report.md
-archive_url: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/reports/2026-10-29.md
+archive_url: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/reports/2026-11-02.md
 html_reports:
   en: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/en/
   af: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/af/
@@ -21,35 +21,35 @@ images:
   af_to_date: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/img/af-todate.png
 board_status_values: ["1 -- Backlog", "2 -- Open", "3 -- In Progress", "4 -- Resolved", "5 -- Closed", "7 -- Maybe Later", "No Status"]
 figures:
-  intake_per_working_day: [6, 3, 6, 3, 2, 5]
-  resolved_per_working_day: [0, 3, 7, 2, 7, 3]
+  intake_per_working_day: [6, 3, 6, 3, 2, 5, 0, 5]
+  resolved_per_working_day: [0, 3, 7, 2, 7, 3, 0, 2]
   intake_today: 5
-  resolved_today: 3
-  intake_to_date: 25
-  resolved_to_date: 22
-  average_intake_per_day: 4.2
-  capacity_lower_limit_per_day: 3.7
+  resolved_today: 2
+  intake_to_date: 30
+  resolved_to_date: 24
+  average_intake_per_day: 3.8
+  capacity_lower_limit_per_day: 1.7
   capacity_confidence: low
 automated_qa_status: on_hold
 cards_listed: 7
 release_notes_candidates: 0
 ---
 
-# Genesis Helpdesk stats: 29 Oct 2026
+# Genesis Helpdesk stats: 2 Nov 2026
 
-Figures as of 29 Oct 2026, 18:45 SAST. Refreshed every weekday evening. Full dark reports: English https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/en/ and Afrikaans https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/af/.
+Figures as of 2 Nov 2026, 17:33 SAST. Refreshed every weekday evening. Full dark reports: English https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/en/ and Afrikaans https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/af/.
 
 ## Summary
 
-- Today: Today 5 tickets were triaged (4 bugs, 1 user error), 3 cards moved to Resolved, and 3 In Progress updates went to reporters.
-- To date: Since the Helpdesk started on 22 Oct, 28 posts have been handled, 25 new tickets have been placed on the Board and 22 cards have moved to Resolved.
+- Today: Catch-up from desk ledgers: 5 new tickets, 2 cards to Resolved (column 171 → 173). Open load 35.
+- To date: Since 22 Oct, 30 new tickets and 24 cards to Resolved across 8 working days.
 - Capacity: To date an average of 4.2 new tickets come in per working day, against 3.7 that are resolved, so the open work is still growing.
 - Automated QA: QA stays deliberately on hold so it does not overwhelm dev capacity, because intake of 4.2 a day is still above the lower limit of 3.7 (see Capacity). Without the QA findings, intake to date would have been 23 (3.8 per working day).
 - What to watch: Whether CSV Import (UI #1234–#1236) and Documents read-only leave In Progress, whether Shelley's Spaces and List View chips get a developer, and whether Entity Table derived / self-relations keeps repeating. Open load is 32.
 
 ## Today
 
-Period: Thursday 29 Oct 2026.
+Period: Monday 2 Nov 2026.
 
 | Measure | Value | Detail |
 |:---|---:|:---|
@@ -57,7 +57,7 @@ Period: Thursday 29 Oct 2026.
 | First responses from the desk | 3 / 5 | 2 already had first and second contact before the desk ran |
 | Outcome replies sent | 3 / 5 | second contacts after expert review · 2 already answered |
 | Progress updates to reporters | 3 | 3 In Progress |
-| Cards moved to Resolved | 3 | Resolved column 168 → 171 · no Closed moves |
+| Cards moved to Resolved | 2 | Resolved column 171 → 173 |
 | Satisfaction polls sent | 0 | none sent today |
 
 ### Response times (today)
@@ -110,16 +110,16 @@ Times are measured from the moment the Helpdesk first saw a post. Today's three 
 
 ## To date
 
-Period: 22 to 29 Oct 2026 · 6 working days.
+Period: 22 to 2 Nov 2026 · 8 working days.
 
 | Measure | Value | Detail |
 |:---|---:|:---|
 | Support posts handled | 28 | 25 needed a card · 3 needed no action |
-| New tickets (cards created) | 25 | 15 bugs · 7 enhancements · 2 not categorised · 1 user error |
+| New tickets (cards created) | 30 | 15 bugs · 7 enhancements · 2 not categorised · 1 user error |
 | First responses sent | 16 | median 3.5 min historically (average 4.9, 12 timed) · today's 3 timed at 2, 5 and 8 min |
 | Expert / outcome answers sent | 16 | median 21 min historically · today's 3 were desk second contacts |
 | Progress updates to reporters | 40 | Open 3 · In Progress 13 · Resolved 12 · Maybe Later 11 · Backlog 1 |
-| Cards moved to Resolved | 22 | Resolved column 149 → 171 |
+| Cards moved to Resolved | 24 | Resolved column 149 → 171 |
 
 ### Response times (to date)
 
@@ -188,14 +188,14 @@ Times are measured from the moment the Helpdesk first saw a post. Today's three 
 
 | Column | At start (22 Oct, cards) | Start of today (cards) | Now (cards) |
 |:---|---:|---:|---:|
-| Backlog | 18 | 17 | 18 |
-| Open | 2 | 3 | 4 |
-| In Progress | 6 | 7 | 10 |
-| Resolved | 149 | 168 | 171 |
+| Backlog | 18 | 18 | 17 |
+| Open | 2 | 4 | 7 |
+| In Progress | 6 | 10 | 11 |
+| Resolved | 149 | 171 | 173 |
 | Closed | 226 | 228 | 228 |
 | Maybe Later | 24 | 24 | 24 |
 | No Status | 4 | 6 | 6 |
-| Total | 429 | 453 | 461 |
+| Total | 429 | 461 | 466 |
 
 The whole Board, not only Helpdesk cards; Now is the last full count (18:45 SAST).
 
@@ -205,14 +205,14 @@ Team size: 6 developers.
 
 ### Today
 
-Today more came in than went out: 5 new tickets against 3 resolved cards, a net flow of +2.
+Today 5 in vs 2 resolved, net +3. Lower limit 1.7/day.
 
 | Measure | Team (6 developers) | Per developer |
 |:---|---:|---:|
 | New tickets | 5 | 0.83 |
-| Resolved | 3 | 0.50 |
-| Net flow (in minus resolved) | +2 · growing | not applicable |
-| Open load (Backlog + Open + In Progress) | 32 | 5.3 |
+| Resolved | 2 | 0.33 |
+| Net flow (in minus resolved) | +3 · growing | not applicable |
+| Open load (Backlog + Open + In Progress) | 35 | 5.8 |
 
 Today is 1 working day; open load is a snapshot of the whole Board, excluding test items.
 
@@ -222,10 +222,10 @@ To date an average of 4.2 new tickets come in per working day, against 3.7 that 
 
 | Measure | Team (6 developers) | Per developer |
 |:---|---:|---:|
-| New tickets per working day | 4.2 | 0.70 |
-| Resolved per working day | 3.7 | 0.62 |
-| Net flow (in minus resolved) | +3 · growing | not applicable |
-| Open load (Backlog + Open + In Progress) | 32 | 5.3 |
+| New tickets per working day | 3.8 | 0.63 |
+| Resolved per working day | 3.0 | 0.50 |
+| Net flow (in minus resolved) | +6 · growing | not applicable |
+| Open load (Backlog + Open + In Progress) | 35 | 5.8 |
 
 6 working days (Thu 22, Fri 23, Mon 26, Tue 27, Wed 28 and Thu 29 Oct); open load is a snapshot of the whole Board, excluding test items.
 
@@ -239,12 +239,14 @@ To date an average of 4.2 new tickets come in per working day, against 3.7 that 
 | Tue 27 Oct | 3 | 2 |
 | Wed 28 Oct | 2 | 7 |
 | Thu 29 Oct | 5 | 3 |
+| Fri 30 Oct | 0 | 0 |
+| Mon 2 Nov | 5 | 2 |
 
 Resolved cards on 22 Oct count as 0, because tracking only began that evening.
 
 ### Lower-limit estimate
 
-- Estimate: 3.7 new tickets a day the team can handle (0.62 per developer · confidence: low (22 resolved cards over 6 working days)).
+- Estimate: 1.7 new tickets a day the team can handle (0.62 per developer · confidence: low (22 resolved cards over 6 working days)).
 - Method: The lower limit is the lower of the average resolution rate to date (22 resolved over 6 working days = 3.7) and the average over the last 3 working days (12 resolved over 27, 28 and 29 Oct = 4.0). Because 22 Oct counts as 0, the estimate leans low rather than high.
 - Warning: Intake is about 1.1 times the lower limit. If both rates hold, the open work will grow by about 0.5 cards per working day (estimate).
 - Analysis: The open pile went from 27 to 32 today, because 5 new tickets came in and 3 cards were resolved (Resolved column 168 to 171). At 3.7 a day, the current 32 open cards are about 8.6 working days of work, or about 5.3 cards per developer (estimate). Today's intake of 5 was above the average of 4.2.
@@ -302,7 +304,7 @@ Cards that were created or updated today. Status is the Board column. A release-
 - Workaround is "not recorded" where the report has no workaround field for that card.
 - Test items are excluded from every count and table.
 - Workaround is "not recorded" where the report has no workaround field for that card.
-- The Cards table lists the cards whose reporter got a progress update today; 0 of today's 3 moves to 4 -- Resolved are listed, and the rest had no reporter update, so their titles are not in this report.
+- The Cards table lists the cards whose reporter got a progress update today; 0 of today's 2 moves to 4 -- Resolved are listed, and the rest had no reporter update, so their titles are not in this report.
 
 ## What to watch
 
