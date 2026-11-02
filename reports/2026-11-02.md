@@ -2,7 +2,7 @@
 schema: genesis-helpdesk-report/v1
 schema_version: 1
 report_date: 2026-11-02
-figures_as_of: 2026-11-02T19:58:00+02:00
+figures_as_of: 2026-11-02T20:11:00+02:00
 timezone: Africa/Johannesburg (SAST, +02:00)
 language: en
 period_start: 2026-10-22
@@ -13,12 +13,9 @@ url: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/re
 archive_url: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/reports/2026-11-02.md
 html_reports:
   en: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/en/
-  af: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/af/
 images:
   en_today: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/img/en-today.png
   en_to_date: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/img/en-todate.png
-  af_today: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/img/af-today.png
-  af_to_date: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/img/af-todate.png
 board_status_values: ["1 -- Backlog", "2 -- Open", "3 -- In Progress", "4 -- Resolved", "5 -- Closed", "7 -- Maybe Later", "No Status"]
 figures:
   intake_per_working_day: [6, 3, 6, 3, 2, 5, 2, 3]
@@ -37,7 +34,7 @@ release_notes_candidates: 3
 
 # Genesis Helpdesk stats: 2 Nov 2026
 
-Figures as of 2 Nov 2026, 19:58 SAST. Refreshed every weekday evening. Full dark reports: English https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/en/ and Afrikaans https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/af/.
+Figures as of 2 Nov 2026, 20:11 SAST. Refreshed every weekday evening. Full dark report: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/en/.
 
 ## Summary
 
