@@ -2,7 +2,7 @@
 schema: genesis-helpdesk-report/v1
 schema_version: 1
 report_date: 2026-11-03
-figures_as_of: 2026-11-03T21:40:00+02:00
+figures_as_of: 2026-11-03T22:55:00+02:00
 timezone: Africa/Johannesburg (SAST, +02:00)
 language: en
 period_start: 2026-10-22
@@ -28,17 +28,17 @@ figures:
   capacity_lower_limit_per_day: 5.7
   capacity_confidence: low
 automated_qa_status: on_hold
-cards_listed: 14
+cards_listed: 15
 release_notes_candidates: 4
 ---
 
 # Genesis Helpdesk stats: 3 Nov 2026
 
-Figures as of 3 Nov 2026, 21:40 SAST. Refreshed every weekday evening. Full dark report: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/en/.
+Figures as of 3 Nov 2026, 22:55 SAST. Refreshed every weekday evening. Full dark report: https://morganphillipsamsquaredsystems.github.io/genesis-helpdesk-report/en/.
 
 ## Summary
 
-- Today: Today 5 Helpdesk tickets were created, 6 cards moved to Resolved, and 9 progress comments went to reporters.
+- Today: Since last night midnight 5 Helpdesk tickets were created, 6 cards moved to Resolved, and 9 progress comments went to reporters.
 - To date: Since the Helpdesk started on 22 Oct, 50 new tickets have been placed on the Board and 51 cards have moved to Resolved.
 - Capacity: To date an average of 5.6 new tickets come in per working day, against 5.7 that are resolved, so the open work is slightly shrinking.
 - Automated QA: QA stays deliberately on hold so it does not overwhelm dev capacity. Intake to date is 5.6 a day against the lower limit of 5.7.
@@ -46,11 +46,11 @@ Figures as of 3 Nov 2026, 21:40 SAST. Refreshed every weekday evening. Full dark
 
 ## Today
 
-Period: Tuesday 3 Nov 2026.
+Period: Tuesday 3 Nov 2026 · from last night 00:00 SAST.
 
 | Measure | Value | Detail |
 |:---|---:|:---|
-| New tickets triaged | 5 | 2 bugs · 3 enhancements · Helpdesk cards created today |
+| New tickets triaged | 5 | 2 bugs · 3 enhancements · cards created since last night midnight |
 | First responses from the desk | 2 / 5 | Stuart and Dayalan · 3 handover (no desk first) |
 | Outcome replies sent | 3 | Stuart · Dayalan · Forms dates (Morgan override) |
 | Progress updates to reporters | 9 | Resolved 4 · In Progress 5 (incl. cascade comment) |
@@ -59,7 +59,7 @@ Period: Tuesday 3 Nov 2026.
 
 ### Response times (today)
 
-Today the desk first-contacted Stuart and Dayalan. Dan, Danie plural-s and Sandra were handover. Exact minute timings are not in the ledger.
+Since last night midnight the desk first-contacted Stuart and Dayalan. Dan, Danie plural-s and Sandra were handover. Forms dates (last night's post) got an outcome reply this morning. Exact minute timings are not in the ledger.
 
 | Measure | Median (min) | Average (min) | Number timed |
 |:---|---:|---:|---:|
@@ -100,7 +100,7 @@ Two of five new tickets got a desk first contact (Stuart, Dayalan). Three were h
 
 | Reporter | New posts | Progress updates received |
 |:---|---:|---:|
-| Danie.Rheeders | 1 | 5 |
+| Danie.Rheeders | 1 | 6 |
 | Stuart | 1 | 0 |
 | Dan | 1 | 0 |
 | Dayalan | 1 | 0 |
@@ -115,10 +115,10 @@ Period: 22 Oct to 3 Nov 2026 · 9 working days.
 
 | Measure | Value | Detail |
 |:---|---:|:---|
-| Support posts handled | 38 | 31 on the 2 Nov file · 7 handled today |
+| Support posts handled | 38 | 31 on the 2 Nov file · 7 handled since last night midnight |
 | New tickets (cards created) | 50 | 19 bugs · 10 enhancements · 2 not categorised · 1 user error |
-| First responses sent | 20 | median 3.5 min historically (average 4.9, 12 timed) · today's 2 desk first contacts |
-| Expert / outcome answers sent | 19 | median 21 min historically · today's 3 outcome replies |
+| First responses sent | 20 | median 3.5 min historically (average 4.9, 12 timed) · 2 desk first contacts in this window |
+| Expert / outcome answers sent | 19 | median 21 min historically · 3 outcome replies in this window |
 | Progress updates to reporters | 52 | Open 3 · In Progress 18 · Resolved 19 · Maybe Later 11 · Backlog 1 |
 | Cards moved to Resolved | 51 | Resolved column 149 → 200 |
 
@@ -181,7 +181,7 @@ Two of five new tickets got a desk first contact (Stuart, Dayalan). Three were h
 | Gabriel Yssel | 10 | 11 |
 | Shelley | 7 | 9 |
 | Morgan Phillips | 5 | 3 |
-| Danie.Rheeders | 1 | 5 |
+| Danie.Rheeders | 1 | 6 |
 | Shells | 2 | 4 |
 | Reinhardt Coetzee | 2 | 5 |
 | Falynn Missing | 1 | 9 |
@@ -206,7 +206,7 @@ Two of five new tickets got a desk first contact (Stuart, Dayalan). Three were h
 | No Status | 4 | 8 | 9 |
 | Total | 429 | 482 | 495 |
 
-The whole Board, not only Helpdesk cards. Now is the 21:20 SAST board pass (Backlog 14, Open 3, In Progress 16, Resolved 200, Closed 229, Maybe Later 24, No Status 9). Start of today is the 2 Nov 21:16 live counts.
+The whole Board, not only Helpdesk cards. Now is the 21:20 SAST board pass (Backlog 14, Open 3, In Progress 16, Resolved 200, Closed 229, Maybe Later 24, No Status 9). Start of today is last night midnight, using the 2 Nov 21:16 live counts (last snapshot before 00:00).
 
 ## Capacity
 
@@ -214,7 +214,7 @@ Team size: 6 developers.
 
 ### Today
 
-Today more went out than came in: 5 new tickets against 6 resolved cards, a net flow of -1.
+Since last night midnight more went out than came in: 5 new tickets against 6 resolved cards, a net flow of -1.
 
 | Measure | Team (6 developers) | Per developer |
 |:---|---:|---:|
@@ -223,7 +223,7 @@ Today more went out than came in: 5 new tickets against 6 resolved cards, a net 
 | Net flow (in minus resolved) | -1 · shrinking | not applicable |
 | Open load (Backlog + Open + In Progress) | 33 | 5.5 |
 
-Today is 1 working day; open load is a snapshot of the whole Board, excluding test items.
+Today is 1 working day, counted from last night midnight; open load is a snapshot of the whole Board, excluding test items.
 
 ### To date
 
@@ -259,7 +259,7 @@ Resolved cards on 22 Oct count as 0, because tracking only began that evening.
 - Estimate: 5.7 new tickets a day the team can handle (0.95 per developer · confidence: low (51 resolved cards over 9 working days)).
 - Method: The lower limit is the lower of the average resolution rate to date (51 resolved over 9 working days = 5.7) and the average over the last 3 working days (29 resolved over 30 Oct, 2 Nov and 3 Nov = 9.7). Because 22 Oct counts as 0, the estimate leans low rather than high.
 - Warning: Intake is about 1.0 times the lower limit. If both rates hold, the open work stays about even (estimate).
-- Analysis: The open pile went from 29 to 33 today, because In Progress moved from 8 to 16 while 6 cards reached Resolved (column 194 → 200) and 5 Helpdesk tickets were created. At 5.7 a day, the current 33 open cards are about 5.8 working days of work, or about 5.5 cards per developer (estimate).
+- Analysis: The open pile went from 29 to 33 since last night midnight, because In Progress moved from 8 to 16 while 6 cards reached Resolved (column 194 → 200) and 5 Helpdesk tickets were created. At 5.7 a day, the current 33 open cards are about 5.8 working days of work, or about 5.5 cards per developer (estimate).
 
 ### Developer lanes on the Board
 
@@ -312,11 +312,12 @@ Cards that were created or updated today. Status is the Board column. A release-
 | Derived query: Timestamp format | Bug | Derived query | 3 -- In Progress | not recorded | Danie.Rheeders | no | no | no |  |  |
 | Canvas View: field display | Bug | Canvas View | 3 -- In Progress | not recorded | Leeroy Stander | no | no | no |  |  |
 | Forms: dynamic filtering on related dropdowns | Enhancement | Forms | 2 -- Open | not recorded | Danie.Rheeders | no | no | no |  |  |
+| Forms: cross-field date validation on start and end | Enhancement | Forms | 1 -- Backlog | not recorded | Danie.Rheeders | no | no | no |  |  |
 
 ## Data notes
 
-- Source: Helpdesk daily log, reply-history and resolved-tracker for 3 Nov 2026, plus the 21:20 SAST Board pass. Period: 22 Oct to 3 Nov 2026 (9 working days). Test posts and test cards are excluded.
-- Start of today is the 2 Nov 21:16 live Board (Backlog 15, Open 6, In Progress 8, Resolved 194, Closed 227, Maybe Later 24, No Status 8, total 482). Now is the 21:20 pass (total 495). Resolved today is the column delta 194 → 200 (6). Intake today (5) is Helpdesk cards created today, not the Board total delta (482 → 495). Named tables are rebuilt for 3 Nov.
+- Source: Helpdesk daily log, reply-history and resolved-tracker for 3 Nov 2026, plus the 21:20 SAST Board pass. Today's window is 3 Nov 00:00 SAST (last night midnight) through 22:55 SAST — not the 10:25 morning triage. Period: 22 Oct to 3 Nov 2026 (9 working days). Test posts and test cards are excluded.
+- Start of today is last night midnight, using the 2 Nov 21:16 live Board (Backlog 15, Open 6, In Progress 8, Resolved 194, Closed 227, Maybe Later 24, No Status 8, total 482). Now is the 21:20 pass (total 495). Resolved today is the column delta 194 → 200 (6). Intake today (5) is Helpdesk cards created since midnight, not the Board total delta (482 → 495). Named tables are rebuilt for this window.
 - Test items are excluded from every count and table.
 - Workaround is "not recorded" where the report has no workaround field for that card.
 - Test items are excluded from every count and table.
